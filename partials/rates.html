@@ -1,0 +1,22 @@
+<style>
+	#ratings li {
+		background: #ccc;
+		margin:1em;
+		padding: 1em;
+	}
+	#ratings ul {
+		list-style:none;
+	}
+</style>
+<section class="ratepage">
+	<center><h2 class="title">BitBANK Exchange Rates</h2></center>
+
+	<!-- Show Video Player -->
+	<div hello-world></div>
+		<div list-view list="AUD in rateData" id="ratings">
+		       <ul>
+				   <li ng-repeat="BTC in rateData" ng-click="go('/rates')"> Bitcoin/Currency: {{BTC.pair}} {{BTC.pretty}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bitcoin Value: {{BTC.pretty_rev}} </li>
+			   </ul>
+		</div><!-- end listView -->
+	<button type="submit" value="ButtonHome" ng-click="go('/')">Home</button>
+</section>
